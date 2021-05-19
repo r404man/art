@@ -1,0 +1,40 @@
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 1em;
+
+    .info-title {
+        line-height: 33px;
+        padding-bottom: 40px;
+        span.name {
+            font-weight: 700;
+        }
+
+        .text {
+            margin: 13px 0px;
+        }
+    }
+}
+.contact-image {
+    display: flex;
+    width: 50%;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+.info-phone {
+    font-weight: 700;
+}
+.phone {
+    margin: 10px 0px 40px 0px;
+}

@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~swiper/swiper-bundle";
+
+@font-face {
+    font-family: "Oxygen";
+    src: url("./assets/fonts/Oxygen-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Oxygen";
+    src: url("./assets/fonts/Oxygen-Bold.woff");
+    font-weight: 700;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Oxygen", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+// Swiper
+span.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+span.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+// ScrollBar
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgb(65, 65, 65);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 38, 38);
+}

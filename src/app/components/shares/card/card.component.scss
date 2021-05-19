@@ -1,0 +1,42 @@
+.art-card {
+    cursor: pointer;
+}
+
+.card-image {
+    display: flex;
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        border-radius: 6px;
+    }
+}
+
+.card-detail {
+    padding-left: 20px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 12px 0px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    .info-title {
+        color: #818181;
+        width: 24%;
+    }
+
+    .info-text {
+        color: #2d2d2d;
+    }
+}

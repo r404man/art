@@ -1,0 +1,10 @@
+.callback-list {
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin-bottom: 60px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

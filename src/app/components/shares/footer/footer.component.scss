@@ -1,0 +1,29 @@
+footer {
+    border-top: 1px solid #cecece;
+    padding: 15px 0px;
+    background-color: #fff;
+}
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c4c4c4;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.footer-copy {
+    .copy-logo {
+        display: flex;
+    }
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 10px;
+    }
+}

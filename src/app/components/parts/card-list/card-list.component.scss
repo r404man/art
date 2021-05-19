@@ -1,0 +1,8 @@
+.art-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+        width: 31.333%;
+    }
+}

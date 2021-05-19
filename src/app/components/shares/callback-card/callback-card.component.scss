@@ -1,0 +1,16 @@
+.callback-card {
+    font-size: 22px;
+    .callback-detail {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: 700;
+        .card-date {
+            color: #818181;
+            width: 22%;
+        }
+        .card-title {
+            width: 80%;
+        }
+    }
+}
