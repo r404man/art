@@ -45,9 +45,31 @@
     display: none;
     .form-title {
         margin-bottom: 10px;
-        
     }
 }
 .editPannelControl {
     display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .create-card {
+        padding: 0;
+    }
+    .card-image {
+        height: 240px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .controls {
+        justify-content: left;
+    }
+    .card-edit {
+        .form-title {
+            font-size: 20px;
+        }
+    }
 }

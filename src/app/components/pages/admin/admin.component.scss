@@ -32,3 +32,17 @@
         }
     }
 }
+
+@media screen and(max-width:600px){
+    .admin {
+        padding-top: 62px;
+        .navigation {
+            display: flex;
+            justify-content: left;
+            .admin-link {
+                margin-right: 5px;
+                padding: 0px 10px;
+            }
+        }
+    }
+}

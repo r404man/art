@@ -3,7 +3,7 @@
 </a>
 
 <nav [ngClass]='{isActive:isActive}'>
-    <a class="nav__link" routerLink='/'>Главная</a>
-    <a class="nav__link" routerLink='/contacts'>Контакты</a>
-    <a class="nav__link" href="#callback">Отзывы</a>
+    <a class="nav__link" (click)='navActive()' routerLink='/'>Главная</a>
+    <a class="nav__link" (click)='navActive()' routerLink='/contacts'>Контакты</a>
+    <a class="nav__link" (click)='navActive()' href="#callback">Отзывы</a>
 </nav>

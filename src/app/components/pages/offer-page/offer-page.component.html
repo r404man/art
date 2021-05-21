@@ -1,22 +1,31 @@
 <div class="offer-page container">
+    <div class="offer-title title">
+        Список заказов
+    </div>
     <div class="offer-table" *ngIf='offers != null'>
-            <table>
-            <tr>
-                <th>Имя</th>
-                <th>Дата</th>
-                <th>Телефон</th>
-                <th>Почта</th>
-                <th>Картина</th>
-            </tr>
-            <tr *ngFor='let offer of offers'>
-                <td>{{offer.name}}</td>
-                <!-- <td>{{offer.artId}}</td> -->
-                <td>{{offer.date}}</td>
-                <td>{{offer.phone}}</td>
-                <td>{{offer.mail}}</td>
-                <td><app-offer-art-detail [artId]='offer.artId'></app-offer-art-detail></td>
-                <td><a class="table-delete" (click)='deleteOffer(offer.id)'>Удалить</a></td>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Дата</th>
+                    <th>Телефон</th>
+                    <th>Почта</th>
+                    <th>Картина</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let offer of offers'>
+                    <td>{{offer.name}}</td>
+                    <!-- <td>{{offer.artId}}</td> -->
+                    <td>{{offer.date}}</td>
+                    <td>{{offer.phone}}</td>
+                    <td>{{offer.mail}}</td>
+                    <td>
+                        <app-offer-art-detail [artId]='offer.artId'></app-offer-art-detail>
+                    </td>
+                    <td><a class="table-delete" (click)='deleteOffer(offer.id)'>Удалить</a></td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>

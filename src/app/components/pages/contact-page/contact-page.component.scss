@@ -46,3 +46,40 @@
         margin-bottom: 15px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        flex-direction: column-reverse;
+        padding: 62px 0px 0px 0px;
+    }
+    .contacts-info {
+        width: 100%;
+        padding: 0px;
+
+        & > * {
+            padding: 0px 10px;
+        }
+
+        .info-part {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .info-social {
+            display: none !important;
+        }
+    }
+
+    .text {
+        font-size: 20px;
+    }
+    .contact-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .info-phone {
+        font-size: 20px;
+    }
+    .info-title {
+        padding-bottom: 20px !important;
+    }
+}
