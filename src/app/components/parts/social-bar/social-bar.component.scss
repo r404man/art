@@ -5,15 +5,23 @@
         display: flex;
         margin-right: 30px;
 
-
         svg {
             &:hover path {
                 fill: #2d2d2d;
             }
             path {
                 fill: #c4c4c4;
-                transition: .3s ease-in-out;
+                transition: 0.3s ease-in-out;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .socials {
+        justify-content: space-between;
+        a {
+            margin-right: 10px;
         }
     }
 }

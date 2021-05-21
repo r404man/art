@@ -1,4 +1,9 @@
-<nav>
+<a class="menu-btn" (click)='navActive()'>
+    Меню
+</a>
+
+<nav [ngClass]='{isActive:isActive}'>
     <a class="nav__link" routerLink='/'>Главная</a>
     <a class="nav__link" routerLink='/contacts'>Контакты</a>
+    <a class="nav__link" href="#callback">Отзывы</a>
 </nav>

@@ -15,3 +15,23 @@
         width: 48%;
     }
 }
+
+@media screen and(max-width:600px) {
+    .callback-title {
+        margin: 20px 0px;
+        padding: 0px 10px;
+    }
+    .arts {
+        padding: 20px 0px;
+    }
+    .art-title {
+        margin-bottom: 15px;
+        padding: 0px 10px;
+    }
+    .callback {
+        flex-direction: column;
+        &> * {
+            width: 100%;
+        }
+    }
+}

@@ -1,9 +1,13 @@
 .art-card {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .card-image {
     display: flex;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
     img {
         width: 100%;
         object-fit: cover;
@@ -18,8 +22,9 @@
 
 .card-title {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 700;
     margin: 12px 0px;
+    color: #2d2d2d;
 }
 
 .card-info {
@@ -38,5 +43,45 @@
 
     .info-text {
         color: #2d2d2d;
+    }
+}
+
+.over {
+    position: absolute;
+    text-decoration: underline;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 25px;
+    opacity: 0;
+
+    color: #fff;
+    text-shadow: 4px 4px 6px #69696945;
+
+    transition: .3s ease-in-out;
+
+    &:hover {
+        color: rgb(179, 179, 179);
+    }
+    // text-shadow: 4px 4px 6px rgba(150, 150, 152, 1);
+}
+
+.art-card:hover .over {
+    opacity: 1;
+    top: 80%;
+}
+
+
+@media screen and (max-width:600px){
+    .card-image {
+        padding: 0px 10px;
+        height: 250px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-info {
+        font-size: 18px;
     }
 }

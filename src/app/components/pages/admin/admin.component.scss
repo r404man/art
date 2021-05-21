@@ -1,0 +1,34 @@
+.admin {
+    .navigation {
+        padding: 10px 0px;
+        text-align: right;
+        .admin-link {
+            text-decoration: none;
+            color: #2d2d2d;
+            margin-right: 1.5em;
+            position: relative;
+            transition: .3s ease-in-out;
+            padding: 10px 0px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                color: #319be6;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 1px;
+                background-color: #319be6;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+}

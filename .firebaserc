@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "moya-epitafiya-shop"
+  },
+  "targets": {
+    "moya-epitafiya-shop": {
+      "hosting": {
+        "art-shop": [
+          "moya-epitafiya-shop"
+        ]
+      }
+    }
+  }
+}

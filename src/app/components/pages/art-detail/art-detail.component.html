@@ -1,0 +1,41 @@
+<div class="art-detail container">
+    <div class="art" *ngIf='art != null'>
+        <div class="art-image" *ngIf='thumbUrl != null'>
+            <img src="{{thumbUrl}}" alt="">
+        </div>
+        <div class="art-details">
+            <div class="details-text">
+                <!-- <div class="text-title">
+                <!-- Название -->
+                <!-- </div> -->
+                <div class="text-val title">
+                    {{art.title}}
+                </div>
+            </div>
+            <div class="details-text">
+                <div class="text-title">
+                    Размер
+                </div>
+                <div class="text-val">
+                    {{art.size}}
+                </div>
+            </div>
+            <div class="details-text">
+                <div class="text-title">
+                    Цена
+                </div>
+                <div class="text-val">
+                    {{art.price}} <span>
+                        <svg _ngcontent-ins-c23="" width="9" height="13" viewBox="0 0 9 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path _ngcontent-ins-c23="" d="M9 0H0V1.36842H9V0Z" fill="#2D2D2D"></path>
+                            <path _ngcontent-ins-c23="" d="M9 2.05261V3.42103H5.14286V13H3.85714V3.42103H0V2.05261H9Z"
+                                fill="#2D2D2D"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <app-offer-form [artId]='artId'></app-offer-form>
+        </div>
+    </div>
+</div>

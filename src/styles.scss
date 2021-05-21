@@ -20,6 +20,7 @@ body {
     font-family: "Oxygen", sans-serif;
     font-size: 22px;
     font-weight: 400;
+    color: #2d2d2d;
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
 .title {
     font-size: 22px;
     font-weight: 700;
+    color: #2d2d2d;
 }
 
 // Swiper
@@ -61,4 +63,93 @@ span.swiper-pagination-bullet-active {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(41, 38, 38);
+}
+
+// Forms
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    &:last-child {
+        justify-content: center;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+    .form-btn {
+        background-color: transparent;
+        border-radius: 6px;
+        border: 1px solid #2d2d2d;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 6px 30px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            background-color: #2d2d2d;
+            color: #fff;
+        }
+    }
+}
+
+.form-input {
+    border-radius: 6px;
+    border: 1px solid #c4c4c4;
+    color: #c4c4c4;
+    font-size: 22px;
+    padding: 4px 0px 4px 20px;
+    font-family: "Oxygen", sans-serif;
+
+    &:focus {
+        color: #2d2d2d;
+        border: 1px solid #2d2d2d;
+    }
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2d2d2d;
+    position: relative;
+    margin-right: 1.5em;
+    padding-bottom: 4px;
+    transition: 0.3s ease-in-out;
+    &:last-child {
+        margin-right: 0px;
+    }
+    &:hover {
+        color: #319be6;
+    }
+    &:hover::after {
+        width: 100%;
+        background-color: #319be6;
+    }
+    &::after {
+        content: "";
+        background-color: #2d2d2d;
+        width: 0%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+// Media
+
+@media screen and (max-width:600px){
+    .form-btn {
+        font-size: 17px !important;
+    }
+    .form-input {
+        font-size: 19px !important;
+    }
 }

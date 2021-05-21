@@ -1,25 +1,30 @@
-<a class="art-card">
+<a routerLink='art/{{item.id}}' class="art-card">
     <div class="card-image">
-        <img src="../../../../assets/main-slider/slide1.jpg" alt="">
+        <img src="{{thumbUrl}}" alt="">
+        <span class="over">Подробнее</span>
     </div>
     <div class="card-detail">
         <div class="card-title">
-            Мой любимый жираф
+            {{item.title}}
+            <!-- Мой любимый жираф -->
         </div>
         <div class="card-info">
             <div class="info-title">
                 Размер
+
             </div>
             <div class="info-text">
-                120х80
+                {{item.size}}
+                <!-- 120х80 -->
             </div>
-        </div>  
+        </div>
         <div class="card-info">
             <div class="info-title">
                 Цена
             </div>
             <div class="info-text">
-                15000
+                <!-- 15000 -->
+                {{item.price}}
                 <span>
                     <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 0H0V1.36842H9V0Z" fill="#2D2D2D" />

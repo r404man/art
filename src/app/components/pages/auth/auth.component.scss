@@ -1,0 +1,15 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0px;
+
+    .auth-title {
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 30%;
+    }
+}

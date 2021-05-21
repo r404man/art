@@ -14,3 +14,23 @@
         }
     }
 }
+
+@media screen and (max-width:600px){
+    .callback-detail {
+        flex-direction: column;
+        margin-bottom: 5px;
+        .card-date {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .card-title {
+            font-size: 20px;
+        }
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .card-date, .card-title {
+        width: 100% !important;
+    }
+}

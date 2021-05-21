@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left !important;
+}
+
+tr > th {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    &.f {
+        color: #ababab;
+    }
+}
+
+.table-delete {
+    cursor: pointer;
+    border: 1px solid #2d2d2d;
+    padding: 5px 7px 6px 7px;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+    &:hover {
+        border-color: red;
+        color: red;
+    }
+}
+
+tr > td {
+    border-bottom: 1px solid #ababab !important;
+    padding: 15px 20px 15px 0px !important;
+    font-size: 17px;
+    &.f {
+        color: #ababab;
+    }
+    &:last-child {
+        text-align: right;
+    }
+
+    &.m {
+        line-height: 25.5px;
+    }
+
+    &.d {
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+.offer-table {
+    padding-top: 30px;
+}

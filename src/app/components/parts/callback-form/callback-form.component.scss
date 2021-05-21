@@ -8,12 +8,20 @@
     color: #c4c4c4;
     font-size: 22px;
     padding: 4px 0px 4px 20px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: "Oxygen", sans-serif;
 
     &:focus {
         color: #2d2d2d;
         border: 1px solid #2d2d2d;
     }
+}
+
+.callback-message {
+    color: rgb(75, 211, 104);
+}
+
+.messageErr {
+    color: red !important;
 }
 
 .callback-form {
@@ -41,7 +49,7 @@
             font-size: 20px;
             font-weight: 400;
             padding: 6px 30px;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
             cursor: pointer;
             &:hover {
                 background-color: #2d2d2d;
@@ -49,5 +57,16 @@
             }
         }
     }
+}
 
+@media screen and(max-width:600px) {
+
+        .callback-form-title {
+            padding: 0px 10px;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+        form {
+            padding: 0px 10px;
+        }
 }

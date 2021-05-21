@@ -38,3 +38,11 @@
 .phone {
     margin: 10px 0px 40px 0px;
 }
+
+.info-title {
+    display: flex;
+    flex-direction: column;
+    .info-part {
+        margin-bottom: 15px;
+    }
+}

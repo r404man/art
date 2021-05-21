@@ -1,5 +1,5 @@
 footer {
-    border-top: 1px solid #cecece;
+    // border-top: 1px solid #cecece;
     padding: 15px 0px;
     background-color: #fff;
 }
@@ -11,19 +11,41 @@ footer {
 }
 
 .footer-logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 5px;
+    color: #c4c4c4;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-copy {
     .copy-logo {
         display: flex;
     }
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     svg {
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 0px 10px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-copy {
+        margin-top: 10px;
     }
 }

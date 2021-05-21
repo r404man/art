@@ -1,0 +1,22 @@
+<div class="offer-form">
+    <form #form='ngForm' (submit)='addOffer(form)' class="offer">
+        <div class="form-title title">
+            Форма заказа картины
+        </div>
+        <div class="form-group msg" *ngIf='message != null'>
+            {{message}}
+        </div>
+        <div class="form-group">
+            <input name="name" ngModel type="text" class="form-input" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <input name="mail" ngModel type="text" class="form-input" placeholder="Почта">
+        </div>
+        <div class="form-group">
+            <input name="phone" ngModel type="text" class="form-input" placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="form-btn">Заказать</button>
+        </div>
+    </form>
+</div>

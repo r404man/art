@@ -6,3 +6,14 @@
         width: 31.333%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .art-list {
+        flex-direction: column;
+
+        & > * {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}

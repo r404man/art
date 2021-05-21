@@ -1,5 +1,3 @@
 <div class="callback-list">
-    <app-callback-card></app-callback-card>
-    <app-callback-card></app-callback-card>
-    <app-callback-card></app-callback-card>
+    <app-callback-card *ngFor='let review of reviews' [item]='review'></app-callback-card>
 </div>

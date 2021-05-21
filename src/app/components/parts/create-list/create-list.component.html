@@ -1,0 +1,8 @@
+<div class="create-list">
+    <div class="create-list-title title">
+        Добавленные картины
+    </div>
+    <div class="list" *ngIf='arts != null'>
+        <app-art-create-card *ngFor='let art of arts' [item]='art'></app-art-create-card>
+    </div>
+</div>

@@ -1,5 +1,3 @@
-<div class="art-list">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+<div class="art-list" *ngIf='arts!=null'>
+    <app-card *ngFor='let art of arts' [item]='art'></app-card>
 </div>

@@ -8,3 +8,12 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .callback-list {
+        padding: 0px 10px;
+        & > * {
+            margin-bottom: 20px;
+        }
+    }
+}

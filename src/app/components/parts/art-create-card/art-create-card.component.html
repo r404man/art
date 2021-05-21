@@ -1,0 +1,39 @@
+<div class="create-card">
+    <div class="card-image">
+        <img src="{{thumbUrl}}" alt="">
+    </div>
+    <div class="card-detail">
+        <div class="card-title title">
+            {{item.title}}
+        </div>
+        <div class="card-text">
+            <span>Размер:</span> {{item.size}}
+        </div>
+        <div class="card-text">
+            <span>Цена: </span>{{item.price}}
+        </div>
+        <div class="card-text controls">
+            <a class="link" (click)='deleteArt(item.id)'>Удалить</a>
+            <a class="link" (click)='editPannel()'>Редактировать</a>
+        </div>
+        <div class="card-edit" [ngClass]='{editPannelControl: editPannelControl}'>
+            <form #form='ngForm' (submit)='editArt(form)'>
+                <div class="form-title title">
+                    Форма редактирования
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" name="title" [(ngModel)]='item.title'>
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" name="size" [(ngModel)]='item.size'>
+                </div>
+                <div class="form-group">
+                    <input class="form-input" type="text" name="price" [(ngModel)]='item.price'>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-btn">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
