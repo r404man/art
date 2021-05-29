@@ -14,7 +14,15 @@ export class ReviewService {
     return this.firestore.collection('reviews').valueChanges() as Observable<Review[]>;
   }
 
+  getReviewsItems() {
+    return this.firestore.collection('reviews').snapshotChanges();
+  }
+
   addReview(data: Review) {
     return this.firestore.collection('reviews').add(data);
+  }
+
+  deleteReview(reviewId:string) {
+    return this.firestore.collection('reviews').doc(reviewId).delete();
   }
 }

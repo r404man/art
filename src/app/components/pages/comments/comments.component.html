@@ -1,0 +1,28 @@
+<div class="comments">
+    <div class="container">
+        <div class="comments__innner">
+            <div class="comments-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Имя</th>
+                            <th>Дата</th>
+                            <th class="text">Текст комментария</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let comment of comments">
+                            <td>{{comment.name}}</td>
+                            <td>{{comment.date}}</td>
+                            <td class="text">{{comment.description}}</td>
+                            <td><a class="link" (click)='commentDelete(comment.commentId)'>
+                                Удалить
+                            </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

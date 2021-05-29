@@ -11,6 +11,7 @@ import { ArtCreateFormComponent } from '../../parts/art-create-form/art-create-f
 import { ArtCreateCardComponent } from '../../parts/art-create-card/art-create-card.component';
 import { CreateListComponent } from '../../parts/create-list/create-list.component';
 import { OfferArtDetailComponent } from '../../parts/offer-art-detail/offer-art-detail.component';
+import { CommentsComponent } from '../comments/comments.component';
 
 const routing = RouterModule.forChild([
   { path: 'auth', component: AuthComponent },
@@ -18,6 +19,7 @@ const routing = RouterModule.forChild([
     path: 'main', component: AdminComponent, children: [
       { path: 'create-art', component: ArtCreateComponent },
       { path: 'offers', component: OfferPageComponent },
+      { path: 'comments', component: CommentsComponent },
     ]
   },
   { path: '**', redirectTo: '/admin/auth' }

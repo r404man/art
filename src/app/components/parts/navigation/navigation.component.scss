@@ -36,10 +36,11 @@ nav {
 @media screen and (max-width: 600px) {
     .menu-btn {
         display: flex;
+        padding-right: 10px;
     }
 
     nav {
-        margin-top: 56px;
+        margin-top: 76px;
         padding: 0px 10px;
         display: flex;
         flex-direction: column;

@@ -22,6 +22,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ArtDetailComponent } from './components/pages/art-detail/art-detail.component';
 import { OfferFormComponent } from './components/parts/offer-form/offer-form.component';
+import { CommentsComponent } from './components/pages/comments/comments.component';
 // import { OfferArtDetailComponent } from './components/parts/offer-art-detail/offer-art-detail.component';
 // import { CreateListComponent } from './components/parts/create-list/create-list.component';
 // import { AdminModule } from './components/pages/admin/admin.module';
@@ -49,6 +50,7 @@ import { OfferFormComponent } from './components/parts/offer-form/offer-form.com
     CallbackListComponent,
     ArtDetailComponent,
     OfferFormComponent,
+    CommentsComponent,
     // OfferArtDetailComponent,
     // CreateListComponent,
     // ArtCreateCardComponent,
